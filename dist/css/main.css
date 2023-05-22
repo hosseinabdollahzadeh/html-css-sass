@@ -26,7 +26,17 @@ header {
     background: #8854d0;
     color: #ffffff; }
 
-a {
-  color: #333; }
-  a:hover {
-    color: aqua; }
+.btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  margin-top: 1rem;
+  text-decoration: none; }
+
+.btn-light {
+  background: #f4f4f4;
+  color: black; }
+
+.btn-dark {
+  background: #333;
+  color: #ffffff; }

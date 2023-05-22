@@ -22,25 +22,42 @@ header {
   }
 }
 
-.section{
+.section {
   padding: 3rem;
 
-  h3{
+  h3 {
     font-size: 2rem;
   }
-  &-a{
+
+  &-a {
     background: $primary-color;
     color: #ffffff;
   }
-  &-b{
+
+  &-b {
     background: $secondary-color;
     color: #ffffff;
   }
 }
 
-a{
-  color: $dark-color;
-  &:hover{
-    color: aqua;
+%btn {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.btn {
+  &-light {
+    @extend %btn;
+    background: $light-color;
+    color: black;
+  }
+
+  &-dark {
+    @extend %btn;
+    background: $dark-color;
+    color: #ffffff;
   }
 }
