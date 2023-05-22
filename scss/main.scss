@@ -11,3 +11,36 @@ body {
   font-family: $font-family;
   line-height: 1.5;
 }
+
+header {
+  background: $dark-color;
+  color: #ffffff;
+  padding: 1rem;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.section{
+  padding: 3rem;
+
+  h3{
+    font-size: 2rem;
+  }
+  &-a{
+    background: $primary-color;
+    color: #ffffff;
+  }
+  &-b{
+    background: $secondary-color;
+    color: #ffffff;
+  }
+}
+
+a{
+  color: $dark-color;
+  &:hover{
+    color: aqua;
+  }
+}
